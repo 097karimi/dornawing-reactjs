@@ -1,0 +1,13 @@
+.app{
+    position: relative;
+}
+.app-cover{
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+@media screen and (max-width: 690px) {
+    .app-cover{
+        margin-top: 3rem;
+    }
+}
