@@ -1,31 +1,55 @@
-
-.navbar{
-    z-index: 1000000;
+#navbrand {
+    height: 100%;
+    background-color: secondary;
+    transition: 1s;
 }
 
-.navbar .container{
+.navbar .navbar-brand {
+    margin-left: 5rem;
+    padding: 10px;
+    transition: 1s;
+    width: 80px;
+}
+.navbar-nav{
+    margin: auto;
+}
+#confluid button {
+    width: 2.5rem;
+    color: #fff;
+    margin-right: 2rem;
+}
+
+#open {
+    width: 1rem;
+    color: #fff;
+    font-size: 1.9rem;
+}
+#close {
+    display: none;
+    font-size: 2.1rem;
+    font-weight: 900;
+    color: #fff;
+    padding: 2rem;
+}
+.navbar-collapse {
     display: flex;
     justify-content: center;
-    align-items: center;
-    text-align: center;
 }
-.collapse{
-    margin-left: 20rem;
+.navbar-nav .nav-item {
+    margin: 0 0.6rem;
 }
-.collapse .navbar-nav .nav-item{
-    margin: 0 .6rem;
-}
-.nav-item .nav-link{
+.nav-item .nav-link {
     color: #fff !important;
     font-weight: 400;
     transition: 1s;
 }
-.nav-link:hover{
+.nav-link:hover {
     color: rgb(94, 141, 241) !important;
     border-bottom: 2px solid rgb(94, 141, 241);
-    margin-bottom: -8px;
+    margin-bottom: -50px !important;
 }
-.user-btn{
+
+.user-btn {
     position: relative;
     border-radius: 50% !important;
     width: 2.5rem;
@@ -34,45 +58,64 @@
     padding: 0;
     box-sizing: border-box;
 }
-.user-btn #navbarDropdown{
+.user-btn #navbarDropdown {
     position: absolute;
     color: #fff;
     width: 2rem;
-    right: .16rem;
+    right: 0.16rem;
     font-size: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    transition: 1s ease;
 }
 #navbarDropdown .dropdown-menu {
     top: 100%;
     left: -17px;
-    margin-top: .125rem;
+    margin-top: 0.125rem;
 }
 
-.shop-btn{
+.shop-btn {
     color: #fff;
     font-size: 2rem;
+    transition: 1s ease;
 }
-.form-nav{
+.form-nav {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-right: 5rem;
+}
+.dropdown-menu[data-bs-popper]{
+    left: -7rem !important;
 }
 
-@media screen and (max-width: 1200px){
-    .collapse{
-        margin-left: 10rem;
-        transition: 1s;
-    }
-}
-@media screen and (max-width: 990px){
-    .collapse{
+@media screen and (max-width: 990px) {
+    .collapse {
         background-color: #0b2534;
-        padding: 2rem;
-        margin-left: 0;
-        height: 100%;
+        padding-top: 2rem;
+        margin: 0;
+        min-width: 100%;
+        height: 100vh;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .nav-item .nav-link {
+        font-weight: 600;
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    .nav-link:hover {
+        margin-bottom: 0 !important;
+    }
+    #confluid .navbar-brand {
+        margin-left: 1rem;
+    }
+    .form-nav {
+        margin: initial;
     }
 }

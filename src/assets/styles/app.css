@@ -1,13 +1,21 @@
 .app{
-    position: relative;
+    width: 100%;
+}
+.app .row{
+    width: 100%;
+    display: flex;
 }
 .app-cover{
-    position: absolute;
-    top: 0;
     width: 100%;
+    height: 100vh;
 }
 @media screen and (max-width: 690px) {
     .app-cover{
         margin-top: 3rem;
     }
+}
+
+.app-test{
+    width: 100%;
+    height: 100vh;
 }
