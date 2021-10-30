@@ -2,6 +2,7 @@ import bgvideo from '../../assets/videos/bgvideo.mp4';
 import imgcover from '../../assets/img/back.jpg';
 import '../../assets/styles/cover.css';
 
+
 const Cover = () => {
     return (
         <section id="cover" >
