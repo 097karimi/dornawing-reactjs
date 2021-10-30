@@ -4,8 +4,7 @@ import logodornawing from '../../assets/img/logo.png';
 import { BsPersonFill } from 'react-icons/bs';
 import { IoCart } from "react-icons/io5";
 import '../../assets/styles/navbar.css';
-import { openNav } from './Open_Close_Nav';
-import { closeNav } from './Open_Close_Nav';
+import { openNav, closeNav } from './Open_Close_Nav';
 
 const Navbar = () => {
 
@@ -60,7 +59,7 @@ const Navbar = () => {
                         <div className="btn btn-secondary dropdown user-btn" type="submit">
                             <a id="navbarDropdown" data-bs-toggle="dropdown" style={{
                                 width: navSize ? '1.3rem' : '2rem',
-                                right: navSize ? '.5rem' : '0.16rem'
+                                right: navSize ? '.55rem' : '0.15rem'
                             }}><BsPersonFill /></a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="#">Profile</a></li>

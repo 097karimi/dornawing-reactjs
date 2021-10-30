@@ -118,4 +118,7 @@
     .form-nav {
         margin: initial;
     }
+    .navbar .navbar-brand {
+        margin-top: -.7rem;
+    }
 }
