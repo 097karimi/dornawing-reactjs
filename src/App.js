@@ -1,25 +1,22 @@
 import Navbar from "./components/navbar/Navbar";
 import Cover from "./components/cover/Cover";
-import './assets/styles/app.css';
+import Why_us from "./components/why_us/Why_us";
 import Test from "./components/test/Test";
+import './assets/styles/app.css';
 
 function App() {
   
   return (
     <div className="app">
-      <div className="container-fuled">
-        <div className="row ">
-          <div className="app-navbar">
+          
             <Navbar />
-          </div>
-          <div className="app-cover">
+          
             <Cover />
-          </div>
-          <div className="app-test">
+        
+            <Why_us />
+
             <Test />
-          </div>
-        </div>
-      </div>
+
     </div>
   );
 }
