@@ -12,10 +12,10 @@ function App() {
           <div className="app-navbar">
             <Navbar />
           </div>
-          <div className="app-cover col-md-12">
+          <div className="app-cover">
             <Cover />
           </div>
-          <div className="app-test col-md-12">
+          <div className="app-test">
             <Test />
           </div>
         </div>
