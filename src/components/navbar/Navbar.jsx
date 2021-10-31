@@ -2,10 +2,10 @@ import * as React from 'react';
 import { useEffect, useState, useRef } from 'react';
 import logodornawing from '../../assets/img/logo.png';
 import { BsPersonFill } from 'react-icons/bs';
+import { closeNav } from './Open_Close_Nav';
+import { openNav } from './Open_Close_Nav';
 import { IoCart } from "react-icons/io5";
 import '../../assets/styles/navbar.css';
-import { openNav } from './Open_Close_Nav';
-import { closeNav } from './Open_Close_Nav';
 
 const Navbar = () => {
 
@@ -32,14 +32,14 @@ const Navbar = () => {
 
             <div className="container-fluid" id="confluid">
                 <a className="navbar-brand" href="#">
-                    <img id="navbrand" src={logodornawing} alt="dornawing" style={{ width: navSize ? '80%' : '90%' }} />
+                    <img id="navbrand" src={ logodornawing } alt="dornawing" style={{ width: navSize ? '80%' : '90%' }} />
                 </a>
                 <button className="navbar-toggler" type="button" id="button-toggler">
-                    <span id="open" onClick={openNav} >&#9776;</span>
+                    <span id="open" onClick={ openNav } >&#9776;</span>
                 </button>
 
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                    <span id="close" className="open" onClick={closeNav} >&times;</span>
+                    <span id="close" className="open" onClick={ closeNav } >&times;</span>
 
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0" style={{ fontSize: navSize ? '.9rem' : '1.1rem', }}>
                         <li className="nav-item">
@@ -65,7 +65,6 @@ const Navbar = () => {
                             }}><BsPersonFill /></a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="#">Profile</a></li>
-                                <li><a class="dropdown-item" href="#">Other Acant</a></li>
                                 <li><hr class="dropdown-divider" /></li>
                                 <li><a class="dropdown-item" href="#">Log Out</a></li>
                             </ul>
@@ -74,20 +73,6 @@ const Navbar = () => {
                     </div>
 
                 </div>
-                {/* <div className="d-flex form-nav" id="form-nav">
-                    <a className="shop-btn" href=""><IoCart /></a>
-                    <div className="btn btn-secondary dropdown user-btn" type="submit">
-
-                        <a id="navbarDropdown" data-bs-toggle="dropdown"><BsPersonFill /></a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Profile</a></li>
-                            <li><a class="dropdown-item" href="#">Other Acant</a></li>
-                            <li><hr class="dropdown-divider" /></li>
-                            <li><a class="dropdown-item" href="#">Log Out</a></li>
-                        </ul>
-
-                    </div>
-                </div> */}
             </div>
         </nav>
     );
