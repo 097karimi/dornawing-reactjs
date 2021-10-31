@@ -10,7 +10,7 @@
     transition: 1s;
     width: 80px;
 }
-.navbar-nav{
+.navbar-nav {
     margin: auto;
 }
 #confluid button {
@@ -28,7 +28,7 @@
     display: none;
     font-size: 2.1rem;
     font-weight: 900;
-    color: #fff;
+    color: crimson;
     padding: 2rem;
 }
 .navbar-collapse {
@@ -42,11 +42,28 @@
     color: #fff !important;
     font-weight: 400;
     transition: 1s;
+    position: relative;
 }
-.nav-link:hover {
+.nav-item .nav-link:hover {
     color: rgb(94, 141, 241) !important;
-    border-bottom: 2px solid rgb(94, 141, 241);
-    margin-bottom: -50px !important;
+    transition: 0s;
+}
+.navbar-light .navbar-nav .nav-link::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    /* background: #78ff00; */
+    border-bottom: rgb(94, 141, 241) solid 3px;
+    z-index: -1;
+    transition: 0.3s ease-in-out;
+}
+.navbar-light .navbar-nav .nav-link:hover:before,
+.navbar-light .navbar-nav .nav-link.active:before {
+    width: 100%;
+    color: rgb(94, 141, 241) !important;
 }
 
 .user-btn {
@@ -88,10 +105,15 @@
     text-align: center;
     margin-right: 5rem;
 }
-.dropdown-menu[data-bs-popper]{
+.dropdown-menu[data-bs-popper] {
     left: -7rem !important;
 }
 
+@media screen and (max-width: 1500px) {
+    #navbarSupportedContent {
+        position: relative;
+    }
+}
 @media screen and (max-width: 990px) {
     .collapse {
         background-color: #0b2534;
@@ -109,9 +131,6 @@
         font-size: 1.5rem;
         margin-bottom: 2rem;
     }
-    .nav-link:hover {
-        margin-bottom: 0 !important;
-    }
     #confluid .navbar-brand {
         margin-left: 1rem;
     }
@@ -119,6 +138,6 @@
         margin: initial;
     }
     .navbar .navbar-brand {
-        margin-top: -.7rem;
+        margin-top: -0.7rem;
     }
 }

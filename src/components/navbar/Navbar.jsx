@@ -4,7 +4,8 @@ import logodornawing from '../../assets/img/logo.png';
 import { BsPersonFill } from 'react-icons/bs';
 import { IoCart } from "react-icons/io5";
 import '../../assets/styles/navbar.css';
-import { openNav, closeNav } from './Open_Close_Nav';
+import { openNav } from './Open_Close_Nav';
+import { closeNav } from './Open_Close_Nav';
 
 const Navbar = () => {
 
@@ -57,9 +58,10 @@ const Navbar = () => {
                     <div className="d-flex form-nav" id="form-nav1">
                         <a className="shop-btn" href="" style={{ fontSize: navSize ? '1.6rem' : '2rem' }}><IoCart /></a>
                         <div className="btn btn-secondary dropdown user-btn" type="submit">
+
                             <a id="navbarDropdown" data-bs-toggle="dropdown" style={{
                                 width: navSize ? '1.3rem' : '2rem',
-                                right: navSize ? '.55rem' : '0.15rem'
+                                right: navSize ? '.5rem' : '0.16rem'
                             }}><BsPersonFill /></a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="#">Profile</a></li>
@@ -72,6 +74,20 @@ const Navbar = () => {
                     </div>
 
                 </div>
+                {/* <div className="d-flex form-nav" id="form-nav">
+                    <a className="shop-btn" href=""><IoCart /></a>
+                    <div className="btn btn-secondary dropdown user-btn" type="submit">
+
+                        <a id="navbarDropdown" data-bs-toggle="dropdown"><BsPersonFill /></a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Other Acant</a></li>
+                            <li><hr class="dropdown-divider" /></li>
+                            <li><a class="dropdown-item" href="#">Log Out</a></li>
+                        </ul>
+
+                    </div>
+                </div> */}
             </div>
         </nav>
     );
