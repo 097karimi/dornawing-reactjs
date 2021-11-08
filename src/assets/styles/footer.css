@@ -1,0 +1,72 @@
+#footer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    min-height: 60vh;
+    background: #f8f8f8;
+    padding: 0;
+    margin: 0;
+}
+
+#footer .body-footer {
+    width: 100%;
+    display: -webkit-inline-box;
+    text-decoration: none;
+    /* display: flex !important; */
+    justify-content: center;
+    align-items: center;
+}
+
+#footer .connected-icons {
+    width: 100%;
+}
+#footer .connected-icons a:nth-child(1):hover,
+#footer .connected-icons a:nth-child(2):hover,
+#footer .connected-icons a:nth-child(5):hover {
+    color: rgb(0, 81, 255) !important;
+}
+#footer .connected-icons a:nth-child(3):hover {
+    color: rgb(255, 0, 0) !important;
+}
+#footer .connected-icons a:nth-child(4):hover,
+#footer .connected-icons a:nth-child(6):hover {
+    color: rgb(125, 27, 134) !important;
+}
+
+#footer .copyright {
+    width: 100%;
+    background: rgba(1, 12, 73, 0.363);
+    margin-bottom: 0;
+    color: #f1f1f1;
+    bottom: 0;
+}
+
+#footer .company,
+.products-items,
+.useful-links,
+.contact-items {
+    text-align: initial;
+}
+#footer .products-items a,
+.useful-links a {
+    text-decoration: none;
+}
+
+#footer .products-items a:hover,
+.useful-links a:hover {
+    color: rgb(33, 33, 145) !important;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 990px) {
+    #footer .company,
+    .products-items,
+    .useful-links,
+    .contact-items {
+        text-align: center;
+    }
+}
