@@ -1,0 +1,128 @@
+#best {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    min-height: 60vh;
+    /* background: rgb(250, 250, 250); */
+    padding: 0;
+    margin: 0;
+}
+
+#best .product-box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0 0.5rem;
+    margin: 0;
+    display: -webkit-inline-box;
+    text-align: -webkit-center;
+}
+
+
+
+
+
+
+#best .best-product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin-right: 0rem;
+    margin-top: 1rem;
+    width: 100%;
+    height: 37rem;
+}
+
+#best .card-box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0 0.5rem;
+    margin: 0;
+    display: -webkit-inline-box;
+    text-align: -webkit-center;
+}
+#best .product-box .col {
+    padding: 0;
+}
+.product-box .content-card {
+    position: absolute;
+    left: 0;
+    top: 2rem;
+    width: 100%;
+    height: 100%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: inherit;
+    flex-direction: column;
+    box-sizing: border-box;
+    line-height: 20px;
+    background: transparent;
+}
+.product-box .content-card h3 {
+    color: rgb(28, 18, 104);
+    font-weight: bold;
+    font-size: clamp(1rem, 8vw, 2rem);
+}
+.product-box .content-card p {
+    font-size: clamp(.5rem, 4vw, 1rem);
+    width: 60%;
+}
+.product-box .content-card .buttons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    margin-top: 2rem;
+}
+.product-box .content-card .buttons a {
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    border: #000 solid 1px;
+    padding: .3rem 1rem .4rem;
+    border-radius: 1rem;
+    transition: 0.5s;
+    text-decoration: none;
+}
+.product-box .content-card .buttons a:hover {
+    background-color: #000;
+    color: #fff;
+}
+.product-box .imgbox {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 0;
+}
+.product-box .imgbox img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    object-fit: cover;
+}
+.product-box .icon-link {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    color: #fff;
+    background-color: rgba(151, 23, 130, 0.5);
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.5rem;
+    padding: 0.2rem 0.4rem;
+}
+
+@media screen and (max-width: 580px) {
+    .content-card .buttons {
+        width: 100%;
+    }
+}

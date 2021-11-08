@@ -1,0 +1,40 @@
+#popular-news {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    min-height: 60vh;
+    background: rgb(233, 230, 230);
+    padding: 0;
+    padding-bottom: 5rem;
+    margin: 0;
+}
+
+#popular-news .popular-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+#popular-news h4 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    color: rgb(5, 18, 58);
+}
+
+#popular-news .box-product {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 2rem 0;
+    display: -webkit-inline-box;
+    text-align: -webkit-center;
+}
