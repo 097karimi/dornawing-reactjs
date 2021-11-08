@@ -1,0 +1,139 @@
+#hobby-table {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    min-height: 60vh;
+    background: rgb(255, 255, 255);
+    padding: 0;
+    padding-bottom: 5rem;
+    margin: 0;
+}
+
+#hobby-table .hobby-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: flex-end;
+    margin-top: 1rem;
+}
+
+#hobby-table .hobby-title h4 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 5rem;
+    margin-bottom: 0;
+    color: rgb(5, 18, 58);
+    padding: 0;
+}
+
+#hobby-table .hobby-app-box h4 {
+    text-align: start;
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: rgb(73, 73, 73);
+    margin-left: 0.3rem;
+}
+
+#hobby-table .hobby-app-box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: -webkit-inline-box;
+    text-align: -webkit-center;
+}
+
+#hobby-table .best-hobby-applicatins {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    padding: 0.5rem 0;
+    width: 98%;
+    height: 25rem;
+}
+
+#hobby-table .card-hobby-box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    display: -webkit-inline-box;
+    text-align: -webkit-center;
+}
+
+.hobby-app-box .img-box-hobby {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 0;
+    overflow: hidden;
+}
+
+.hobby-app-box .img-box-hobby img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+    border-radius: 0;
+}
+
+#hobby-table .hobby-app-table {
+    width: 95%;
+}
+
+#hobby-table .hobby-table-box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: -webkit-inline-box;
+    text-align: -webkit-center;
+}
+
+#hobby-table .hobby-app-table th {
+    font-size: 2rem;
+    text-align: start;
+}
+
+#hobby-table .hobby-app-table td {
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+}
+
+#hobby-table .hobby-app-table td span {
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: 0.5rem;
+}
+
+#hobby-table .hobby-app-download {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+#hobby-table .hobby-app-download button {
+    color: rgb(255, 255, 255);
+    background: rgb(48, 42, 99);
+    padding: 0.8rem 2.5rem;
+    font-weight: 500;
+}
+
+#hobby-table .hobby-app-download button:hover {
+    color: rgb(0, 37, 148);
+    font-weight: 500;
+    background: rgb(221, 220, 224);
+}
