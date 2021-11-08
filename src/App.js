@@ -1,22 +1,16 @@
-import Navbar from "./components/navbar/Navbar";
-import Cover from "./components/cover/Cover";
-import Why_us from "./components/why_us/Why_us";
-import Test from "./components/test/Test";
+import { Route, Routes } from "react-router";
+import Hobby from "./components/hobby/Hobby";
 import './assets/styles/app.css';
+import Home from "./components/home/Home";
 
 function App() {
-  
+
   return (
     <div className="app">
-          
-            <Navbar />
-          
-            <Cover />
-        
-            <Why_us />
-
-            <Test />
-
+      <Routes>
+        <Route path='/' element={ <Home /> } exact/>
+        <Route path='/hobby' element={ <Hobby /> } />
+      </Routes>
     </div>
   );
 }
