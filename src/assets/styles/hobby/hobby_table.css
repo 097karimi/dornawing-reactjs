@@ -18,8 +18,8 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    align-items: flex-end;
-    margin-top: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
 }
 
 #hobby-table .hobby-title h4 {
