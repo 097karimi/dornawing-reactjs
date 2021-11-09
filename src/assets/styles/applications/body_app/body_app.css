@@ -1,0 +1,38 @@
+#body-app {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(250, 250, 250);
+    padding: 0;
+    margin: 0;
+}
+#body-app .applicatins-box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 2rem 0;
+    display: -webkit-inline-box;
+    text-align: -webkit-center;
+}
+#body-app .applications-title {
+    display: contents;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+#body-app .applications-title h4 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 6rem;
+    margin-bottom: 1rem;
+    color: rgb(5, 18, 58);
+}
+

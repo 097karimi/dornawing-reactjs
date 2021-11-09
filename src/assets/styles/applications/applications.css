@@ -1,0 +1,21 @@
+.row > * {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * 0) !important;
+    padding-left: calc(var(--bs-gutter-x) * .0) !important;
+    margin-top: var(--bs-gutter-y);
+}
+#home {
+    width: 100%;
+    text-align: -webkit-center;
+}
+/* #home .row{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+} */
