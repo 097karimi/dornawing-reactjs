@@ -1,0 +1,74 @@
+#newpag {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    min-height: 20vh;
+    padding: 0;
+    margin: 0;
+}
+
+#newpagination ul {
+    position: relative;
+    width: 100%;
+    background: #fff;
+    display: flex;
+    padding: 5px 20px;
+    margin: 0;
+    border-radius: 50px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    padding: .5rem 1rem;
+}
+#newpagination ul li {
+    position: absolute;
+    display: contents;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+    line-height: 50px;
+    margin: 0 5px;
+    padding: 0;
+}
+#newpagination ul li a {
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    color: #777;
+    font-weight: 600;
+    border-radius: 20%;
+    cursor: pointer;
+    border: 1px solid #fff;
+    padding: 0 1rem;
+}
+#newpagination ul li:hover a,
+#newpagination ul li.active a {
+    background: #333;
+    color: #fff;
+}
+#newpagination li:first-child {
+    margin-right: 30px;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+#newpagination li:last-child {
+    margin-left: 30px;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 580px) {
+    #newpagination ul {
+        width: 20rem;
+    }
+    #newpagination ul li a {
+        font-size: .9rem;
+        border-radius: 15%;
+        padding: 0;
+        margin: 0;
+    }
+}
