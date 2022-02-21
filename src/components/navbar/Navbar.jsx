@@ -1,13 +1,13 @@
 import * as React from 'react';
 import { useEffect, useState } from 'react';
-import logodornawing from '../../assets/img/logo.png';
-import { BsPersonFill } from 'react-icons/bs';
-import { closeNav } from './Open_Close_Nav';
+import { NavLink } from 'react-router-dom';
 import { openNav } from './Open_Close_Nav';
+import { closeNav } from './Open_Close_Nav';
+import logodornawing from '../../assets/img/logo.png';
 import { IoCart } from "react-icons/io5";
 import userimg from '../../assets/img/user.png';
 import Flag from 'react-flagkit';
-import '../../assets/styles/navbar.css';
+import './navbar.css';
 
 const Navbar = () => {
 
@@ -45,27 +45,27 @@ const Navbar = () => {
 
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0" style={{ fontSize: navSize ? '.9rem' : '1rem' }}>
                         <li className="nav-item">
-                            <a className="nav-link active" href="#">Surveying</a>
+                            <NavLink className="nav-link" to="/" exact activeClassName="active" >Surveying</NavLink>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Argiculture</a>
+                            <NavLink className="nav-link" to="/argiculture" exact activeClassName="active" >Argiculture</NavLink>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="hobby">Hobby</a>
+                            <NavLink className="nav-link" to="/hobby" exact activeClassName="active" >Hobby</NavLink>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="applications" >Applications</a>
+                            <NavLink className="nav-link" to="/applications" exact activeClassName="active" >Applications</NavLink>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#" >Newsroom</a>
+                            <NavLink className="nav-link" to="/newsroom" exact activeClassName="active" >Newsroom</NavLink>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Support</a>
+                            <NavLink className="nav-link" to="/support" exact activeClassName="active" >Support</NavLink>
                         </li>
                     </ul>
                     <div className="d-flex form-nav" id="form-nav1">
-                        <a className="lang-btn" href="" style={{ fontSize: navSize ? '.8rem' : '1rem' }}><Flag country="GB" size={20} /> EN </a>
-                        <a className="shop-btn" href="" style={{ fontSize: navSize ? '1.6rem' : '2rem' }}><IoCart /></a>
+                        <a className="lang-btn" href="#" ><Flag country="GB" size={20} /> EN </a>
+                        <a className="shop-btn" href="#" style={{ fontSize: navSize ? '1.6rem' : '2rem' }}><IoCart /></a>
                         <div className="dropdown user-btn display-flex" type="submit">
 
                             <a id="navbarDropdown" data-bs-toggle="dropdown" style={{
@@ -74,13 +74,12 @@ const Navbar = () => {
                                 padding: 0,
                                 margin: 0
                             }}>
-                                {/* <BsPersonFill /> */}
                                 <img src={`${userimg}`} alt="" />
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Profile</a></li>
+                                <li><a class="dropdown-item" href="/panel-admin">Panel</a></li>
                                 <li><hr class="dropdown-divider" /></li>
-                                <li><a class="dropdown-item" href="#">Log Out</a></li>
+                                <li><a class="dropdown-item" href="/login">Log In</a></li>
                             </ul>
 
                         </div>

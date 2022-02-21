@@ -1,6 +1,5 @@
-import bgvideo from '../../../assets/videos/bgvideo.mp4';
 import imgcover from '../../../assets/img/product_14.jpg';
-import '../../../assets/styles/hobby/hobby_cover.css';
+import './hobby_cover.css';
 
 const Hobby_Cover = () => {
     return (

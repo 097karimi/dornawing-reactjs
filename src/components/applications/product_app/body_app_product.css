@@ -1,0 +1,28 @@
+#body-app-product {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(250, 250, 250);
+    padding: 0;
+    margin: 0;
+}
+
+#body-app-product .body-description-product {
+    position: relative;
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: justify;
+    align-items: flex-start;
+    margin-top: 3rem;
+}
+#body-app-product .body-description-product h3 {
+    font-size: 2.5rem;
+}

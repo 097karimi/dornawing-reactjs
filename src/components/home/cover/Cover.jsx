@@ -1,6 +1,6 @@
 import bgvideo from '../../../assets/videos/bgvideo.mp4';
 import imgcover from '../../../assets/img/product_17.jpg';
-import '../../../assets/styles/home/cover.css';
+import './cover.css';
 
 const Cover = () => {
     return (

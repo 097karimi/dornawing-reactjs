@@ -1,0 +1,99 @@
+#products-body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+#products-body .row {
+    display: -webkit-box;
+    justify-content: center;
+    align-items: center;
+}
+#products-body .buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1rem!important;
+    margin: 0;
+    width: 100%;
+    gap: 1rem;
+}
+#products-body .btn-add {
+    padding: 0 .5rem .5rem 0.7rem;
+    font-weight: 500;
+    color: #262b40;
+    background: #61dafb;
+    /* border: 2px solid #61dafb; */
+}
+#products-body .btn-add:hover {
+    background: #09db72;
+    color: #fff;
+}
+#products-body .btn-add span {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+#products-body .btn-delete {
+    padding: 0.2rem .5rem .3rem .5rem;
+    font-weight: 500;
+    color: #ffffff;
+    background: #ff8f0e;
+}
+#products-body .btn-delete span {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+#products-body .btn-delete:hover {
+    background: #a51e1e;
+    color: rgb(240, 190, 190);
+}
+
+#products-body .modal .modal-body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#products-body .modal .modal-body form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: initial;
+    line-height: 2rem;
+}
+#products-body .modal .modal-body .form-input {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+    margin: .5rem 0;
+}
+#products-body .modal .modal-body .form-input input {
+    width: 15rem;
+}
+#products-body .modal .modal-body .form-input span {
+    width: 3rem;
+    text-align: right;
+}
+
+#products-body .product-box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 2rem 0;
+    display: -webkit-inline-box;
+    text-align: -webkit-center;
+}
+/* 
+#products-body .product-box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0 0 2rem 0;
+    display: -webkit-inline-box;
+    text-align: -webkit-center;
+} */

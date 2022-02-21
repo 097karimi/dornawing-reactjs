@@ -1,15 +1,15 @@
 import Footer from "../footer/Footer";
 import Navbar from "../navbar/Navbar";
-import Pagination from "../pagination/Pagination";
 import Body_Applications from "./boddy-app/Body_Applications";
-import '../../assets/styles/applications/applications.css';
+import ScrollToTop from "../ScrollToTop";
+import './applications.css';
 
 const Applications = () => {
     return ( 
         <div id="applications">
+            <ScrollToTop />
             <Navbar />
             <Body_Applications />
-            {/* <Pagination /> */}
             <Footer />
         </div>
      );

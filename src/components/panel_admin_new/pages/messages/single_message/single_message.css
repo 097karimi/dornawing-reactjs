@@ -1,0 +1,119 @@
+#single-message {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+#single-message #body-single-message {
+    position: absolute;
+    width: calc(100% - 250px);
+    right: 0;
+    /* margin-top: 5rem !important; */
+    margin: 5rem 0 0 0 !important;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 990px) {
+    #single-message #body-single-message {
+        width: 100%;
+    }
+}
+
+#single-message #body-single-message .messages {
+    width: 100%;
+    display: flex;
+}
+
+#single-message #body-single-message .message-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 90%;
+    padding: 1rem;
+    margin: 2rem 1rem;
+    background: rgb(235, 235, 235);
+    border-radius: 0.5rem;
+}
+#single-message #body-single-message .header-message,
+#single-message #body-single-message .name-user {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#single-message #body-single-message .name-user img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+}
+
+#single-message #body-single-message .message-box .name-user h4 {
+    color: rgb(7, 25, 75);
+    font-size: 1.1rem;
+}
+
+#single-message #body-single-message .date-message {
+    color: dimgray;
+    margin-bottom: 0.4rem;
+}
+
+#single-message #body-single-message .title-message {
+    text-align: initial;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+}
+
+#single-message #body-single-message .message-body {
+    text-align: initial;
+}
+
+
+#single-message #body-single-message .answer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#single-message #body-single-message .answer-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 90%;
+    padding: 1rem;
+    margin: 2rem 1rem;
+    background: rgb(6, 41, 70);
+    border-radius: 0.5rem;
+}
+#single-message #body-single-message .header-answer,
+#single-message #body-single-message .name-user {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#single-message #body-single-message .name-user img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+}
+
+#single-message #body-single-message .answer-box .name-user h4 {
+    color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+}
+
+#single-message #body-single-message .date-answer {
+    color: rgb(211, 211, 211);
+    margin-bottom: 0.4rem;
+}
+
+#single-message #body-single-message .answer-body {
+    text-align: initial;
+    margin-top: 1.5rem;
+    color: #fff;
+}

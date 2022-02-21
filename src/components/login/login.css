@@ -1,0 +1,232 @@
+#login {
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto';
+}
+#login .logo-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 1rem 0 0 3rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin: 0;
+}
+#login .logo-box img {
+    width: 4rem;
+}
+#login .logo-box h1 {
+    color: #31394e;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+}
+#login #form-2{
+    display: none;
+}
+#login h1 {
+    margin: 0 0 2rem 0;
+}
+#login a {
+    text-decoration: none
+}
+#login img {
+    max-width: 100%;
+    height: auto;
+}
+
+#login .l-form {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#login .shape1,
+#login .shape2 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+#login .shape1 {
+    top: -7rem;
+    left: -3.5rem;
+    background: linear-gradient(180deg, #535f80 0%, rgba(196,196,196,0) 100%);
+}
+#login .shape2 {
+    bottom: -6rem;
+    right: -5.5rem;
+    transform: rotate(180deg);
+    background: linear-gradient(180deg, #535f80 0%, rgba(196,196,196,0) 100%);
+}
+
+#login .form {
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+#login .form-content {
+    width: 290px;
+}
+#login .form-img {
+    display: none;
+}
+
+#login .form-div {
+    position: relative;
+    display: grid;
+    grid-template-columns: 7% 93%;
+    margin-bottom: 1rem;
+    padding: .25rem 0;
+    border-bottom: 1px solid #8590AD;
+}
+
+#login .form-div.focus {
+    border-bottom: 1px solid #535f80;
+}
+#login .form-div-one {
+    margin-bottom: 3rem;
+}
+#login .form-icon {
+    font-size: 1.5rem;
+    color: #8590AD;
+}
+#login .form-div.focus .form-icon {
+    color: #535f80;
+}
+#login .form-label {
+    display: block;
+    position: absolute;
+    left: .75rem;
+    top: .25rem;
+    font-size: .93rem;
+    color: #8590AD;
+}
+#login .form-div-input {
+    position: relative;
+}
+#login .form-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    padding: .5rem .75rem;
+    font-size: 1.2rem;
+    color: #535f80;
+}
+
+#login .form-forgot {
+    display: block;
+    text-align: right;
+    margin-bottom: 2rem;
+    font-size: .93rem;
+    color: #8590AD;
+    font-weight: 500;
+    transition: .5s;
+}
+#login .form-forgot:hover {
+    color: #535f80;
+    transition: .5s
+}
+
+#login .form-button {
+    width: 100%;
+    padding: 1rem;
+    font-size: .93rem;
+    outline: none;
+    border: none;
+    background: #535f80;
+    color: #fff;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+#login .form-button:hover {
+    box-shadow: 0px 15px 36px rgba(0,0,0,.15);
+}
+#login .option {
+    color: rgba(43, 42, 42, 0.719);
+    font-size: 14px;
+    margin-top: 30px;
+}
+#login .option button {
+    color: #4285f4;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#login .form-social {
+    text-align: center;
+}
+#login .form-social-text {
+    display: block;
+    font-size: .93rem;
+    margin-bottom: 1rem;
+}
+#login .form-social-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    margin-right: 1rem;
+    padding: .5rem;
+    background: #8590AD;
+    color: #fff;
+    font-size: 1.25rem;
+    border-radius: 50%;
+}
+#login .form-social-icon:hover {
+    background: #535f80;
+}
+
+@media screen and (min-width: 968px) {
+    #login .shape1 {
+        width: 400px;
+        height: 400px;
+        top: -11rem;
+        left: -6.5rem;
+    }
+    #login .shape2 {
+        width: 300px;
+        height: 300px;
+        right: -6.5rem;
+    }
+    #login .form {
+        grid-template-columns: 1.5fr 1fr;
+        padding: 0 2rem;
+    }
+    #login .form-content {
+        width: 320px;
+    }
+    #login .form-img {
+        display: block;
+        width: 700px;
+        justify-self: center;
+    }
+}
+
+@media screen and (max-width: 968px) {
+    #login .logo-box {
+        padding: 1rem 0 0 1rem;
+    }
+    #login .logo-box img {
+        width: 3rem;
+    }
+    #login .logo-box h1 {
+        font-size: 1.2rem;
+    }
+}

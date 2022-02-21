@@ -1,0 +1,51 @@
+#chart {
+    width: 100%;
+    min-height: 80vh;
+    /* background: #61dafb9a; */
+    border-radius: 1rem;
+    padding: 0 .7rem;
+    display: flex;
+}
+#chart .row {
+    display: -webkit-box;
+    justify-content: space-between;
+}
+#chart .chart-sales {
+    width: 98%;
+    max-height: 90vh;
+    z-index: 100;
+    padding: 2rem;
+    margin: 2rem 0;
+    border-radius: .5rem;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.3);
+    background: #54e5ff83;
+}
+
+#chart .chart-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: initial;
+}
+#chart .chart-title h5 {
+    text-align: initial;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+#chart .chart-title .cash {
+    text-align: initial;
+    color: rgb(20, 7, 75);
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0;
+}
+#chart .chart-title p {
+    text-align: initial;
+    color: slategray;
+}
+#chart .chart-title .percent {
+    text-align: initial;
+    color: #05a677;
+    font-weight: 600;
+}

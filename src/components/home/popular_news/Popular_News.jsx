@@ -2,7 +2,7 @@ import product1 from '../../../assets/img/product_10.webp';
 import product2 from '../../../assets/img/product_6.jpg';
 import product3 from '../../../assets/img/product_3.jpg';
 import { IoShareSocialSharp } from "react-icons/io5";
-import '../../../assets/styles/home/papular/popular_news.css';
+import './popular_news.css';
 import Papular_Item from './Papular_Item';
 
 const Popular_News = () => {

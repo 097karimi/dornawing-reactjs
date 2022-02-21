@@ -1,0 +1,67 @@
+#body-user {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+#body-user .row {
+    display: -webkit-box;
+    justify-content: center;
+    align-items: center;
+}
+#body-user .buttons {
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    padding: 1rem!important;
+    margin: 0;
+    width: 100%;
+}
+#body-user .compose {
+    padding: 0 .7rem .5rem 0.2rem;
+    font-weight: 500;
+    color: #262b40;
+    background: #61dafb;
+}
+#body-user .compose span {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+#body-user .button-status {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#body-user .button-status button {
+    color: #fff;
+    background: #262b40;
+    border: 1px solid #262b40;
+    border-radius: .3rem;
+    padding: .5rem 1rem;
+    margin-left: 1rem;
+}
+#body-user .button-status button:hover {
+    color: #61dafb;
+}
+#body-user .button-status .icon-buttons {
+    font-size: 1.5rem;
+    color: #fff;
+    background: #262b40;
+    border-radius: .3rem;
+    padding: .55rem;
+    display: flex;
+    align-items: flex-start;
+}
+#body-user .button-status .icon-buttons svg {
+    margin: 0 .5rem;
+}
+#body-user .button-status .icon-buttons svg:hover {
+    color: #61dafb;
+    cursor: pointer;
+}
+/* #header-messages .table {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */

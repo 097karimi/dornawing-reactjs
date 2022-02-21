@@ -2,7 +2,7 @@ import { BsChevronCompactDown } from 'react-icons/bs';
 import icon1 from '../../../assets/img/1.png';
 import icon2 from '../../../assets/img/2.png';
 import icon3 from '../../../assets/img/3.png';
-import '../../../assets/styles/home/why_us/why_usr.css';
+import './why_usr.css';
 
 const Why_Us = () => {
     return (

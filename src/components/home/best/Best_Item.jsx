@@ -1,10 +1,9 @@
-import product2 from '../../../assets/img/best-3.jpg';
-import product1 from '../../../assets/img/best-4.jpg';
-import '../../../assets/styles/home/best/best_item.css';
+import image from '../../../assets/img/best-4.jpg';
+import './best_item.css';
 
 
-const Best_Item = ({ image, title, description }) => {
-        
+const Best_Item = () => {
+
     return (
         <div class="col-lg-6">
             <div className="best-product">
@@ -13,8 +12,12 @@ const Best_Item = ({ image, title, description }) => {
                         <img src={image} class="card-img-top" alt="..." />
                     </div>
                     <div class="card-body content-card">
-                        <h3 class="card-title">{title}</h3>
-                        <p class="card-text">{description}</p>
+                        <h3 class="card-title">DJI Smart Controller</h3>
+                        <p class="card-text">
+                            This powerful remote controller features a 5.5-inch 1080p high-brightness
+                            display for pure performance. Compatible with the DJI GO 4 and DJI Fly apps,
+                            it also supports the installation of third-party apps.
+                        </p>
                         <div class="buttons">
                             <a href="#">Read More</a>
                             <a href="#">Buy Now</a>

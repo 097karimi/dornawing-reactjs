@@ -3,7 +3,7 @@ import product3 from '../../../assets/img/product_8.jpg';
 import product4 from '../../../assets/img/product_9.jpg';
 import product5 from '../../../assets/img/product_15.jpg';
 import product6 from '../../../assets/img/product_16.jpg';
-import '../../../assets/styles/hobby/hobby_applications.css';
+import './hobby_applications.css';
 
 const Applications = () => {
     return (

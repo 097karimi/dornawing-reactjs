@@ -1,6 +1,6 @@
 import product10 from '../../../assets/img/product_14.jpg';
 import product7 from '../../../assets/img/product_15.jpg';
-import '../../../assets/styles/home/newest.css';
+import './newest.css';
 
 
 const Newest = () => {

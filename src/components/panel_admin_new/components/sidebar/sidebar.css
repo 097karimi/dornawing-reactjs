@@ -1,0 +1,121 @@
+#dash-nav .navbar {
+    height: 80px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#dash-nav .menu-bars {
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    background: none;
+    display: none;
+}
+#dash-nav .menu-bars svg {
+    color: #005485 !important;
+}
+
+#dash-nav .nav-menu {
+    background-color: #0b2534;
+    width: 250px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 850ms;
+    z-index: 1;
+}
+@media screen and (max-width: 990px) {
+    #dash-nav .menu-bars {
+        display: block;
+    }
+    #dash-nav .menu-bars svg {
+        color: #0b2534;
+    }
+    #dash-nav .nav-menu {
+        left: -100%;
+    }
+}
+#dash-nav .nav-menu.active {
+    left: 0;
+    transition: 350ms;
+    border: 0.0625 rem solid #4c5680;
+}
+
+#dash-nav .nav-menu-items {
+    list-style: none;
+}
+#dash-nav .nav-menu-items h5 {
+    color: rgb(103, 194, 236);
+    font-size: 1.5rem;
+    padding: 0 2.5rem 0 0;
+    text-align: center;
+}
+
+#dash-nav .nav-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 8px 0px 8px 16px;
+    list-style: none;
+    height: 60px;
+}
+
+#dash-nav .nav-item .nav-link {
+    color: #fff !important;
+    background: transparent !important;
+    font-size: 18px;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    font-weight: 500;
+    transition: 1s;
+    position: relative;
+}
+#dash-nav .nav-item .nav-link:hover,
+#dash-nav .nav-item .nav-link:hover svg {
+    color: #0b2534 !important;
+    transition: 0s;
+}
+#dash-nav .nav-item .nav-link::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    /* color: #0b2534; */
+    background: #ffffff9f;
+    border-radius: 0.3rem;
+    border-bottom: rgb(94, 141, 241) solid 3px;
+    z-index: -1;
+    transition: 0.2s ease-in-out;
+}
+#dash-nav .nav-link:hover:before,
+#dash-nav .nav-link.active:before {
+    width: 100%;
+    color: #0b2534 !important;
+}
+
+#dash-nav .nav-menu-items {
+    width: 100%;
+}
+
+#dash-nav .navbar-toggle {
+    background-color: #0b2534;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#dash-nav span {
+    margin-left: 16px;
+}
+

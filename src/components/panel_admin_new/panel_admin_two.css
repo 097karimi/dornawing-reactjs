@@ -1,0 +1,20 @@
+#panel-admin-two {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+#panel-admin-two #body-dashboard {
+    position: absolute;
+    width: calc(100% - 250px);
+    right: 0;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 990px) {
+    #panel-admin-two #body-dashboard {
+        width: 100%;
+    }
+}

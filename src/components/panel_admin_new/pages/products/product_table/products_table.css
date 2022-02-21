@@ -1,0 +1,296 @@
+.box-table-products {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.box-table-products .table {
+    width: 97%;
+}
+
+.box-table-products .table .productname-table img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 0%;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+.box-table-products .check-table {
+    text-align: initial;
+    max-width: 2rem;
+}
+.box-table-products .check-table .check-box {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 5rem;
+    width: 100%;
+    color: #c9c9c9;
+    padding: 0;
+}
+.box-table-products .id-table {
+    max-width: 1rem;
+    min-height: 5rem;
+}
+.box-table-products .box-id {
+    text-align: center;
+    width: 100%;
+    min-height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+}
+.box-table-products .table .productname-table {
+    text-align: initial;
+    max-width: 6rem;
+    min-height: 5rem !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    align-items: center;
+}
+.box-table-products .table .productname-table #navbarDropdown {
+    display: flex;
+    color: #000;
+}
+.box-table-products .table .productname-table #navbarDropdown img {
+    display: flex;
+}
+
+.box-table-products .table .productname-table .box-productname {
+    text-align: initial;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    font-size: 0.8rem;
+    font-weight: 600;
+    min-height: 5rem;
+}
+.box-table-products .price-table {
+    text-align: initial;
+    max-width: 3rem;
+    font-size: 0.8rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    align-items: center;
+}
+.box-table-products .price-table input {
+    width: 6rem;
+}
+.box-table-products .price-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 5rem;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.box-table-products .date-table {
+    max-width: 4rem;
+    min-height: 5rem;
+}
+.box-table-products .date-table .box-date {
+    justify-content: center;
+    width: 100%;
+    min-height: 5rem;
+    padding: 0.5rem;
+}
+
+.box-table-products .qty-table {
+    max-width: 3rem;
+    min-height: 5rem;
+}
+.box-table-products .qty-table input {
+    width: 6rem;
+}
+
+.box-table-products .qty-box,
+.box-table-products .box-date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 5rem;
+    text-align: initial;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.box-table-products .btn-table {
+    text-align: end;
+    max-width: 2rem;
+    min-height: 5rem;
+    padding: 0.5rem;
+}
+
+.search-box-products {
+    background: rgb(187, 187, 187);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    gap: 1rem;
+    font-size: 1rem;
+    margin: 0 0 0 1rem !important;
+    width: 20rem !important;
+    height: 2.5rem !important;
+}
+.search-box-products input {
+    border: none !important;
+    color: #fff;
+    background: rgb(187, 187, 187);
+    outline: none;
+}
+.search-box-products span {
+    margin-left: 1rem;
+}
+
+.box-table-products .product-single {
+    position: absolute;
+}
+
+.box-table-products .table .delete-table {
+    text-align: end;
+    max-width: 3rem;
+    min-height: 5rem;
+    padding: 0.5rem;
+    text-align: center;
+}
+.box-table-products .table .box-delete {
+    min-height: 5rem;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.box-table-products .table .delete-table .edit-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0, 81, 255);
+    color: rgb(255, 255, 255);
+    height: 2rem;
+    font-weight: 600;
+}
+.box-table-products .table .delete-table .edit-btn:hover {
+    background: rgb(195, 196, 199);
+    color: rgb(27, 50, 112);
+}
+.box-table-products .delete-table .edit-btns .sub-btn {
+    color: rgb(12, 48, 34);
+    background: rgb(0, 255, 157);
+    padding: 0.05rem 0.3rem;
+    font-weight: 600;
+}
+.box-table-products .delete-table .edit-btns .cancel-btn {
+    color: rgb(255, 255, 255);
+    background: rgb(122, 134, 146);
+    padding: 0rem 0.4rem;
+    margin-top: 0.2rem;
+}
+
+.box-table-products .table .box-delete .delete-btn {
+    background: #ff8f0e;
+    color: #ffffff;
+    height: 2rem;
+    padding: 0.2rem 0.3rem;
+    margin: 0;
+    font-weight: 600;
+}
+.box-table-products .table .box-delete .delete-btn:hover {
+    background: #f00;
+}
+
+.box-table-products .table .modal-table .modal-content {
+    background: transparent;
+    border: none !important;
+}
+
+.box-table-products .more-table {
+    /* display: none; */
+    text-align: end;
+    max-width: 3rem;
+    min-height: 5rem;
+    padding: 0.5rem;
+    text-align: center;
+}
+.box-table-products .more-box {
+    min-height: 5rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box-table-products .more-box button {
+    padding: 0;
+}
+.box-table-products .more-box button a {
+    color: #cacbf1;
+    background: #111235;
+    height: 2rem;
+    text-align: center;
+    border-radius: 0.2rem;
+    font-weight: 600;
+    padding: 0.2rem 0.4rem 0.3rem !important;
+}
+.box-table-products .more-box button a:hover {
+    background: #cacbf1;
+    color: #111235;
+}
+.box-table-products .more-table .dropdown-menu {
+    position: fixed !important;
+    transform: none !important;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    margin: 0;
+}
+.box-table-products .pagination-table {
+    width: 95%;
+    display: grid;
+    justify-content: flex-start;
+    align-items: center;
+}
+.box-table-products #newpagination ul {
+    height: 3rem;
+}
+.box-table-products #newpagination ul a {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.2rem;
+}
+
+@media screen and (max-width: 1400px) {
+    .box-table-products .table .productname-table .box-productname {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+/* 
+@media screen and (max-width: 790px) {
+    .box-table-users .btn-table .box-action {
+        flex-direction: column;
+    }
+} */
+@media screen and (max-width: 790px) {
+    .box-table-products .more-table {
+        display: block;
+        margin: 0 !important;
+        display: table-cell;
+    }
+    .box-table-products .th-qty-table,
+    .box-table-products .th-price-table {
+        display: none;
+    }
+}

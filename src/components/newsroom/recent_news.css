@@ -1,0 +1,101 @@
+#all-recent-news {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 5rem;
+    /* margin-left: 3rem; */
+    padding: 1rem;
+}
+#all-recent-news .news-tags {
+    position: relative;
+    width: 100%;
+}
+#all-recent-news .tags {
+    position: relative;
+    text-align: justify;
+    width: 100%;
+}
+#all-recent-news .news-tags .tags-title {
+    width: 100%;
+    text-align: initial;
+}
+#all-recent-news .news-tags h4,
+#all-recent-news .recent-title h4 {
+    text-align: initial;
+    margin-bottom: 1rem;
+}
+#all-recent-news .tag-item {
+    position: relative;
+    display: inline-flex !important;
+    text-decoration: none;
+    color: #313131;
+    display: initial;
+    margin-right: 1rem;
+    padding: .3rem;
+    background: rgba(124, 197, 219, 0.1);
+    border-radius: 30%;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+#all-recent-news .recent-news {
+    width: 100%;
+}
+#all-recent-news .recent-news .recent-item {
+    margin-bottom: 2rem;
+}
+#all-recent-news .recent-news .recent-item .recent-card {
+    text-align: initial;
+}
+#all-recent-news .recent-news .recent-item .recent-card .date {
+    display: flex;
+    align-items: baseline;
+}
+
+#all-recent-news .recent-news img {
+    width: 100%;
+}
+#all-recent-news .recent-news .recent-item h5 {
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+#all-recent-news .recent-news .recent-item a {
+    text-decoration: none;
+    color: #000;
+}
+#all-recent-news .recent-news .recent-item a:hover {
+    text-decoration: underline;
+}
+#all-recent-news .recent-news .recent-item span {
+    display: flex;
+    color: #686666;
+    font-size: .8rem;
+}
+
+#all-recent-news .subscribe {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: initial;
+    width: 100%;
+}
+#all-recent-news .subscribe p {
+    color: #444444;
+}
+#all-recent-news .subscribe input {
+    height: 2.5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: #444444 solid 1px;
+    border-radius: .3rem;
+    outline: none;
+}
+#all-recent-news .subscribe button {
+    color: #fff;
+    background: #2a0077;
+    font-weight: 500;
+}
+#all-recent-news .subscribe button:hover {
+    color: #2a0077;
+    background: #c5c3c3;
+}

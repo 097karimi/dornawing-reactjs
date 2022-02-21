@@ -1,0 +1,172 @@
+.box-table {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box-table .table {
+    width: 97%;
+}
+.box-table .table .message-single {
+    display: none;
+}
+
+.box-table .table .check-table {
+    text-align: initial;
+    max-width: 2rem;
+}
+.box-table .table .check-table .check-box {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 3rem;
+    color: #c9c9c9;
+}
+
+.box-table .table .body-tr {
+    width: 100%;
+    display: table;
+    vertical-align: middle;
+    min-height: 5.1rem;
+    text-decoration: none;
+    color: gray;
+    border-bottom: 1px solid rgba(216, 216, 216, 0.555);
+}
+
+.box-table .table img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.box-table .table .user-table {
+    text-align: initial;
+    max-width: 8rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    align-items: center;
+}
+.box-table .table .user-table .box-user {
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    font-weight: 600;
+    gap: .5rem;
+}
+
+.box-table .table .message-table {
+    text-align: initial;
+    max-width: 10rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    align-items: center;
+}
+.box-table .table .message-table .box-message {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 3rem;
+    text-align: initial;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.box-table .table .btn-table {
+    text-align: center;
+    max-width: 2rem;
+    padding: 0;
+    margin: 0;
+}
+.box-table .table .btn-table .box-status {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    padding: 0;
+    margin: 0;
+}
+.box-table .table .delete-table {
+    text-align: center;
+    max-width: 2rem;
+    padding: 0;
+    margin: 0;
+}
+.box-table .table .btn-table .box-delete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    padding: 0;
+    margin: 0;
+}
+.box-table .table .delete-table .box-delete .delete-btn {
+    color: #f00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    padding: 0;
+    margin: 0;
+}
+.box-table .table .more-table {
+    text-align: center;
+    max-width: 2rem;
+    padding: 0;
+    margin: 0 .5rem;
+    display: none;
+}
+.box-table .table .btn-table .box-more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    padding: 0;
+    margin: 0;
+}
+.box-table .table .more-table .box-more .more-btn {
+    color: rgb(0, 132, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    padding: 0;
+    margin: 0;
+}
+.box-table .pagination-table {
+    width: 97%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-table #newpagination ul {
+    height: 3rem;
+}
+.box-table #newpagination ul a {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.2rem;
+}
+/* @media screen and (max-width: 1400px) {
+    .box-table .table .user-table .box-user {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+} */
+@media screen and (max-width: 790px) {
+    .box-table .table .btn-table .box-status,
+    .box-table .table .check-table .check-box {
+        flex-direction: column;
+    }
+    .box-table .table .more-table {
+        display: block;
+    }
+    .box-table .table .message-table,
+    .box-table .table .btn-table {
+        display: none;
+    }
+}

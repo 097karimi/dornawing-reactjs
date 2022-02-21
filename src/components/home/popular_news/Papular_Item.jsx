@@ -3,7 +3,7 @@ import product2 from '../../../assets/img/product_6.jpg';
 import product3 from '../../../assets/img/product_3.jpg';
 import { BsLink45Deg } from 'react-icons/bs';
 import { IoShareSocialSharp } from "react-icons/io5";
-import '../../../assets/styles/home/papular/papular_item.css';
+import './papular_item.css';
 
 const Papular_Item = () => {
     return (

@@ -1,0 +1,42 @@
+#header-dashboard {
+    width: 100%;
+    position: relative;
+}
+#header-dashboard .row {
+    display: -webkit-box;
+    justify-content: center;
+    align-items: center;
+}
+#header-dashboard .box-data {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: #dad9d9;
+    /* box-shadow: 0 5px 25px rgba(0,0,0,0.3); */
+    padding: 1rem 2rem;
+    margin: .5rem;
+    border-radius: .5rem;
+    width: 95%;
+    height: 8rem;
+}
+#header-dashboard .number {
+    display: flex;
+    flex-direction: column;
+    text-align: initial;
+    padding: 0;
+    margin: 0;
+}
+#header-dashboard .number h5 {
+    color: rgb(24, 10, 88);
+    font-size: 2.3rem;
+    font-weight: 700;
+}
+#header-dashboard .number span {
+    text-align: initial;
+    margin: 0;
+}
+#header-dashboard .icon {
+    display: flex;
+    color: #2b3299;
+    font-size: 4rem;
+}

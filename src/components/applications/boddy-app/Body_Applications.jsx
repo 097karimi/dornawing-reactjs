@@ -1,9 +1,7 @@
-
-import '../../../assets/styles/applications/body_app/body_app.css';
 import { useEffect, useState } from 'react';
 import Pagination from '../../pagination/Pagination';
 import Item_Body_App from './Item_Body_App';
-
+import './body_app.css';
 
 const Body_Applications = () => {
 
@@ -54,11 +52,12 @@ const Body_Applications = () => {
 
     return (
         <section id="body-app">
+            <div className="row applications-title">
+                <h4>Applications</h4>
+                <p>Dornawing Product Applications</p>
+                <button className="btn"><a href="/">Back To Home</a></button>
+            </div>
             <div className="container" >
-                <div className="row applications-title">
-                    <h4>Applications</h4>
-                </div>
-
                 <div className="row applicatins-box">
                     {items.map((item) => {
                         return (

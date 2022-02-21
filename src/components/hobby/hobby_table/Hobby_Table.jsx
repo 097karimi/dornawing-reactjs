@@ -1,6 +1,6 @@
 import product3 from '../../../assets/img/best-3.jpg';
 import product4 from '../../../assets/img/product_8.jpg';
-import '../../../assets/styles/hobby/hobby_table.css';
+import './hobby_table.css';
 
 const Hobby_Table = () => {
     return (
